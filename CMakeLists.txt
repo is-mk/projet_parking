@@ -4,6 +4,7 @@ project(projet_parking C)
 set(CMAKE_C_STANDARD 11)
 
 
-add_executable(projet_parking main.c)
-
-add_executable(fichiercsv src/fichiercsv.c)
+add_executable(projet_parking main.c
+        include/lesparkings.h
+        src/affichage.c
+        src/lesparkings.c)
